@@ -7,8 +7,3 @@ before_install:
 
 after_success:
         -mvn test
-
-notifications:
-        email:
-                recipients:
-                        ct417class@gmail.com
