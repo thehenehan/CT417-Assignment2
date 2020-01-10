@@ -4,35 +4,33 @@ import junit.framework.Test;
 import junit.framework.TestCase;
 import junit.framework.TestSuite;
 
-/**
- * Unit test for simple App.
- */
-public class AppTest 
-    extends TestCase
-{
-    /**
-     * Create the test case
-     *
-     * @param testName name of the test case
-     */
-    public AppTest( String testName )
-    {
-        super( testName );
-    }
+public class AppTest {
 
-    /**
-     * @return the suite of tests being tested
-     */
-    public static Test suite()
-    {
-        return new TestSuite( AppTest.class );
-    }
-
-    /**
-     * Rigourous Test :-)
-     */
-    public void testApp()
-    {
-        assertTrue( true );
-    }
+	@Test
+	public void studentNameTest() {
+		Student student = new Student(null, null, null, null, null, null, null);
+		student.setName("Tommy");
+		student.setAge(22);
+		String test  = "Tommy"+":"+"22";
+		assertEquals(student.getUsername(),test);
+	}
+	
+	@Test
+	public void moduleNameTest() {
+		Module module = new Module(null, null, null);
+		module.setModuleName("Databases");
+		String test = "Databases";
+		assertEquals(module.getModuleName(),test);
+		
+		
+	}
+	
+	@Test
+	public void courseTestName() {
+		Course course = new Course(null, null, null, null, null);
+		course.setCourseName("Business Information Systems");
+		String test = "Business Information Systems";
+		assertEquals(course.getCourseName(),test);
+		
+	}
 }
