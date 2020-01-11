@@ -17,9 +17,9 @@ public class AppTest {
 	@Test
 	public void moduleNameTest() {
 		Module module = new Module(null, null, null, null);
-		module.setModuleName("Databases");
+		module.setName("Databases");
 		String test = "Databases";
-		assertEquals(module.getModuleName(),test);
+		assertEquals(module.getName(),test);
 		
 		
 	}
@@ -27,9 +27,9 @@ public class AppTest {
 	@Test
 	public void courseTestName() {
 		Course course = new Course(null, null, null, null, null);
-		course.setCourseName("Business Information Systems");
+		course.setName("Business Information Systems");
 		String test = "Business Information Systems";
-		assertEquals(course.getCourseName(),test);
+		assertEquals(course.getName(),test);
 		
 	}
 }
