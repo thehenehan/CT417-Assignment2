@@ -10,7 +10,7 @@ public class AppTest {
 		Student student = new Student(null, 0, null, null, null, null);
 		student.setName("Tommy");
 		student.setAge(22);
-		String test  = "Tommy"+":"+"22";
+		String test  = "Tommy"+"22";
 		assertEquals(student.getUsername(),test);
 	}
 	
