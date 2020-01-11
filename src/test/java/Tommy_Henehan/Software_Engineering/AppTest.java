@@ -7,7 +7,7 @@ public class AppTest {
 
 	@Test
 	public void studentNameTest() {
-		Student student = new Student(null, null, null, null, null, null);
+		Student student = new Student(null, 0, null, null, null, null);
 		student.setName("Tommy");
 		student.setAge(22);
 		String test  = "Tommy"+":"+"22";
@@ -26,7 +26,7 @@ public class AppTest {
 	
 	@Test
 	public void courseTestName() {
-		Course course = new Course(null, null, null, null);
+		Course course = new Course(null, null, null, null, null);
 		course.setCourseName("Business Information Systems");
 		String test = "Business Information Systems";
 		assertEquals(course.getCourseName(),test);
